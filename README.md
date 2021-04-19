@@ -10,5 +10,5 @@
 - ATTENTION: l'entrainement peut prendre beaucoup de temps veuiellez donc à mettre un epoche = 2 pour tester
 - enregistrer le model
 - lancez l'application Flask on faisant `python app.py` à la racince du repértoire
-- faites vous plaisir
+- faites vous plaisir en allant sur l'url: `localhost:5000`
 
