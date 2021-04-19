@@ -1,4 +1,5 @@
-docker run -p 8502:8501 --name=fafa -v YOUR_PATH/image-classification-web-app/saved_model/:/models/horse-vs-human/1 -e MODEL_NAME=horse-vs-human tensorflow/serving
+## Lancez Tenserflow Serving
+docker run -p 8502:8501 --name=fafa -v YOUR_PATH/ipssi-deep/saved_model/:/models/horse-vs-human/1 -e MODEL_NAME=horse-vs-human tensorflow/serving
 
 
 ## Comment tester le playboo
