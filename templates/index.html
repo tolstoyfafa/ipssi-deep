@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="row">
+
+  <div class=" text-center col-md-6 offset-md-3 border border-dark rounded">
+
+    <h2>Dépose ton Image</h2>
+    <hr>
+    {% if erreur %}
+    <div class="alert alert-danger" role="alert">
+      {{erreur}}
+    </div>
+    {% endif %}
+    <form action="{{ url_for('index') }}" method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <input type="file" name="file" class="btn">
+      </div>
+
+      <input type="submit" value="Humain Ou Cheval ?" class="btn btn-primary">
+
+    </form>
+  </div>
+</div>
+
+{% endblock %}
